@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+  color: #3c3c3c;
+  font-size: 16px;
+  background-color: #f6f6f6;
+}
+
+.wrap {
+  max-width: 1174px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+.underline {
+  width: 45px;
+  height: 6px;
+  background: #dddbdb;
+  margin: 0 auto 40px;
+}
+.header {
+  text-align: center;
+  margin: 110px auto 60px;
+  line-height: 24px;
+}
+.header__subtitle {
+  hyphens: auto;
+  max-width: 570px;
+  margin: 0 auto;
+}
+.profile {
+  max-width: 270px;
+  display: inline-block;
+  margin-right: 29px;
+}
+.profile:last-child {
+  margin-right: 0;
+}
+.avatar {
+  margin-bottom: 21px;
+  width: 269px;
+  height: 269px;
+  position: relative;
+}
+.av1 {
+  background: url(../img/avatar2.png);
+}
+.av2 {
+  background: url(../img/avatar2.png);
+}
+.av3 {
+  background: url(../img/avatar3.png);
+}
+.av4 {
+  background: url(../img/avatar4.png);
+}
+.avatar__logo {
+  width: 42px;
+  height: 42px;
+  display: none;
+  position: relative;
+  z-index: 2;
+  margin-top: 113px;
+}
+.avatar__logo:nth-child(1) {
+  background: #5ecbe7 url(../img/Twitter.png) no-repeat center;
+  margin-left: 66px;
+}
+.avatar__logo:nth-child(2) {
+  background: #5ecbe7 url(../img/FB.png) no-repeat center;
+}
+.avatar__logo:nth-child(3) {
+  background: #5ecbe7 url(../img/G+.png) no-repeat center;
+}
+.avatar:hover::after {
+  content: '';
+  width: 269px;
+  height: 269px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #18b5dc;
+}
+.avatar:hover > .avatar__logo {
+  display: inline-block;
+}
+.subtitle {
+}
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+.position {
+  font-size: 14px;
+  line-height: 18px;
+}
